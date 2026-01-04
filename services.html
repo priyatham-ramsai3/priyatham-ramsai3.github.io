@@ -1,36 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Freelance Services | Priyatham Rama Sai</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<h1>Freelance Services</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <div class="navbar">
+    <div class="logo">Priyatham</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="qa-career.html">QA Career</a>
+      <a href="services.html" class="active">Freelance Services</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<div class="container">
-<h2>Website Development</h2>
-<p>Basic – AED 500</p>
-<p>Business – AED 1,000</p>
-<p>Advanced – AED 1,500+</p>
+<section class="container fade-in">
+  <h2>Freelance Services</h2>
 
-<h2>Android App Development</h2>
-<p>Basic – AED 1,200</p>
-<p>Business – AED 2,000</p>
-<p>Custom – Price on Request</p>
-</div>
+  <h3>Website Development</h3>
+  <ul>
+    <li><strong>Basic – AED 500</strong> (1–3 pages)</li>
+    <li><strong>Business – AED 1,000</strong> (5–7 pages)</li>
+    <li><strong>Advanced – AED 1,500+</strong> (Custom features)</li>
+  </ul>
 
-<footer>© 2026 Priyatham Rama Sai</footer>
+  <h3>Android App Development</h3>
+  <ul>
+    <li><strong>Basic App – AED 1,200</strong></li>
+    <li><strong>Business App – AED 2,000</strong></li>
+    <li><strong>Custom App – Price on Request</strong></li>
+  </ul>
+
+  <h3>QA & Testing Services</h3>
+  <ul>
+    <li>Manual & Regression Testing</li>
+    <li>API Testing</li>
+    <li>UAT Support</li>
+  </ul>
+
+  <a href="contact.html" class="btn btn-hire">Hire Me</a>
+</section>
+
+<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
 
 <a href="https://wa.me/971501934353" class="whatsapp-float" target="_blank">
-<img src="whatsapp.png">
+  <img src="whatsapp.png" alt="WhatsApp">
 </a>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
+});
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>

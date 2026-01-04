@@ -1,33 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Priyatham Rama Sai</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<h1>About Me</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="qa-career.html">QA Career</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <div class="navbar">
+    <div class="logo">Priyatham</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="qa-career.html">QA Career</a>
+      <a href="services.html">Freelance Services</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<div class="container">
-<p>
-Senior QA Engineer with 6+ years of testing experience and 8+ years in system
-administration. Strong in Manual, API, and UAT testing.
-</p>
-</div>
+<section class="container fade-in">
+  <h2>About Me</h2>
 
-<footer>© 2026 Priyatham Rama Sai</footer>
+  <p>
+    I am <strong>Priyatham Rama Sai</strong>, a Senior Quality Assurance Engineer
+    with over <strong>6+ years of professional QA experience</strong> and
+    <strong>8+ years of System Administration background</strong>.
+  </p>
+
+  <p>
+    My expertise includes Manual Testing, API Testing, UAT, Agile/Scrum practices,
+    and close collaboration with developers and business stakeholders to ensure
+    stable and high-quality releases.
+  </p>
+
+  <p>
+    Alongside my QA career, I work as a <strong>freelance Website and Android App Developer</strong>,
+    delivering clean, responsive, and performance-optimized solutions for startups
+    and individuals.
+  </p>
+</section>
+
+<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
 
 <a href="https://wa.me/971501934353" class="whatsapp-float" target="_blank">
-<img src="whatsapp.png">
+  <img src="whatsapp.png" alt="WhatsApp">
 </a>
+
+<script>
+/* Fade-in */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
+});
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>

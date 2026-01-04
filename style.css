@@ -123,32 +123,43 @@ footer {
   padding: 15px;
 }
 
-/* FLOATING ICONS */
+/* FLOATING BUTTON BASE */
 .float-btn {
   position: fixed;
-  right: 18px;
-  width: 52px;
-  height: 52px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.whatsapp {
-  bottom: 20px;
-  background: #25d366;
-}
-
-.instagram {
-  bottom: 85px;
-  background: #e1306c;
+  z-index: 9999;
 }
 
 .float-btn img {
-  width: 28px;
+  width: 30px;
+  height: 30px;
 }
+
+/* WHATSAPP */
+.float-btn.whatsapp {
+  bottom: 20px;
+  background: #25D366;
+}
+
+/* INSTAGRAM */
+.float-btn.instagram {
+  bottom: 90px;
+  background: #E1306C;
+}
+
+/* LINKEDIN */
+.float-btn.linkedin {
+  bottom: 160px;
+  background: #0A66C2;
+}
+
 
 /* MOBILE */
 @media (max-width: 768px) {

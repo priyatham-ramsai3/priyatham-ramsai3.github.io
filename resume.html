@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Resume | Priyatham Rama Sai</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Resume</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
 <body>
 
 <header>
-  <div class="nav">
+  <div class="navbar">
     <div class="logo">Priyatham</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="qa-career.html">QA Career</a>
-      <a href="services.html">Freelance Services</a>
-      <a href="resume.html" class="active">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="qa-career.html">QA Career</a></li>
+      <li><a href="services.html">Freelance Services</a></li>
+      <li><a class="active" href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </div>
 </header>
 
-<main class="container resume-section">
+<div class="container">
   <h1>Resume</h1>
   <p>You can download my latest resume below.</p>
 
-  <a href="Priyatham_Rama_Sai_Resume.pdf"
-     class="btn btn-hire"
-     target="_blank">
-     Download Resume (PDF)
+  <a href="Priyatham_Rama_Sai_Resume.pdf" class="btn btn-primary">
+    Download Resume (PDF)
   </a>
-</main>
+</div>
 
-<footer>
-  © 2026 Priyatham Rama Sai | Dubai, UAE
-</footer>
+<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
 
-<a href="https://wa.me/971501934353" class="whatsapp-float" target="_blank">
-  <img src="whatsapp.png" alt="WhatsApp">
-</a>
+<div class="whatsapp-float">
+  <a href="https://wa.me/971501934353" target="_blank">
+    <img src="images/whatsapp.png">
+  </a>
+</div>
 
 </body>
 </html>

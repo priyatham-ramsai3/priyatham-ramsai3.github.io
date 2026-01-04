@@ -169,4 +169,19 @@ footer {
   .menu-toggle {
     display: block;
   }
+  /* LINKEDIN BUTTON */
+.btn-linkedin {
+  background: #0a66c2;
+  color: #fff;
+}
+
+.btn-linkedin:hover {
+  background: #004182;
+}
+
+.linkedin {
+  bottom: 150px; /* above Instagram */
+  background: #0a66c2;
+}
+
 }

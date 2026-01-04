@@ -25,9 +25,11 @@ nav a:hover {
 
 .container {
     max-width: 1000px;
-    margin: auto;
+    margin: 30px auto;
     padding: 30px;
     background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 h1, h2 {
@@ -53,5 +55,41 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px;
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+/* Contact form */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0a2540;
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 55px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
 }

@@ -1,62 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Priyatham Rama Sai</title>
-<link rel="stylesheet" href="style.css">
+  <title>About | Priyatham Rama Sai</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
 
 <header>
   <div class="navbar">
     <div class="logo">Priyatham</div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="qa-career.html">QA Career</a>
-      <a href="services.html">Freelance Services</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="qa-career.html">QA Career</a></li>
+        <li><a href="services.html">Freelance Services</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </div>
 </header>
 
-<section class="container fade-in">
-  <h2>About Me</h2>
+<main>
+  <section>
+    <h1>About Me</h1>
+    <p>
+      I am <strong>Priyatham Rama Sai</strong>, a Senior Quality Assurance Engineer with
+      over <strong>6+ years of QA experience</strong> and
+      <strong>8+ years of System Administration background</strong>.
+    </p>
+    <p>
+      My expertise includes Manual Testing, API Testing, UAT, Agile/Scrum practices,
+      and close collaboration with developers.
+    </p>
+    <p>
+      Alongside QA, I work as a <strong>freelance Website and Android App Developer</strong>.
+    </p>
+  </section>
+</main>
 
-  <p>
-    I am <strong>Priyatham Rama Sai</strong>, a Senior Quality Assurance Engineer
-    with over <strong>6+ years of professional QA experience</strong> and
-    <strong>8+ years of System Administration background</strong>.
-  </p>
-
-  <p>
-    My expertise includes Manual Testing, API Testing, UAT, Agile/Scrum practices,
-    and close collaboration with developers and business stakeholders to ensure
-    stable and high-quality releases.
-  </p>
-
-  <p>
-    Alongside my QA career, I work as a <strong>freelance Website and Android App Developer</strong>,
-    delivering clean, responsive, and performance-optimized solutions for startups
-    and individuals.
-  </p>
-</section>
-
-<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
-
-<a href="https://wa.me/971501934353" class="whatsapp-float" target="_blank">
-  <img src="whatsapp.png" alt="WhatsApp">
-</a>
-
-<script>
-/* Fade-in */
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
-});
-document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
-</script>
+<footer>
+  © 2026 Priyatham Rama Sai | Dubai, UAE
+</footer>
 
 </body>
 </html>

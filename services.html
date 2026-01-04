@@ -2,62 +2,53 @@
 <html>
 <head>
   <title>Freelance Services</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
 
 <header>
   <div class="navbar">
     <div class="logo">Priyatham</div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="qa-career.html">QA Career</a></li>
-      <li><a class="active" href="services.html">Freelance Services</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="qa-career.html">QA Career</a></li>
+        <li><a class="active" href="services.html">Freelance Services</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-<div class="container">
-  <h1>Freelance Services</h1>
+<main>
+  <section>
+    <h1>Freelance Services</h1>
 
-  <h2>Website Development</h2>
-  <ul>
-    <li>Basic – AED 500 (1–3 pages)</li>
-    <li>Business – AED 1,000 (5–7 pages)</li>
-    <li>Advanced – AED 1,500+</li>
-  </ul>
+    <h2>Website Development</h2>
+    <ul>
+      <li>Basic – AED 500</li>
+      <li>Business – AED 1,000</li>
+      <li>Advanced – AED 1,500+</li>
+    </ul>
 
-  <h2>Android App Development</h2>
-  <ul>
-    <li>Basic App – AED 1,200</li>
-    <li>Business App – AED 2,000</li>
-    <li>Custom App – Price on Request</li>
-  </ul>
+    <h2>Android App Development</h2>
+    <ul>
+      <li>Basic App – AED 1,200</li>
+      <li>Business App – AED 2,000</li>
+      <li>Custom App – Price on Request</li>
+    </ul>
 
-  <h2>QA & Testing Services</h2>
-  <ul>
-    <li>Manual & Regression Testing</li>
-    <li>API Testing</li>
-    <li>UAT Support</li>
-  </ul>
+    <a href="contact.html" class="btn btn-primary">Hire Me</a>
+  </section>
+</main>
 
-  <a href="contact.html" class="btn btn-primary">Hire Me</a>
-</div>
-
-<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
-
-<div class="whatsapp-float">
-  <a href="https://wa.me/971501934353" target="_blank">
-    <img src="images/whatsapp.png">
-  </a>
-</div>
+<footer>
+  © 2026 Priyatham Rama Sai | Dubai, UAE
+</footer>
 
 </body>
 </html>

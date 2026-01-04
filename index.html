@@ -1,115 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Priyatham Rama Sai | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <title>Priyatham Rama Sai | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
 
 <header>
   <div class="navbar">
     <div class="logo">Priyatham</div>
-    <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="qa-career.html">QA Career</a>
-      <a href="services.html">Freelance Services</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="qa-career.html">QA Career</a></li>
+        <li><a href="services.html">Freelance Services</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </div>
 </header>
 
-<section class="hero fade-in">
-  <div class="hero-content">
+<main>
+  <section>
     <h1>Priyatham Rama Sai</h1>
     <h2>Senior QA Engineer & Freelance Developer</h2>
-    <p>
-      Dubai, UAE • 6+ Years Software QA • 8+ Years System Administration<br>
-      Manual Testing • API Testing • UAT • Agile • Web & Android Development
-    </p>
 
-    <div class="btn-group">
-      <a href="contact.html" class="btn btn-hire">Hire Me</a>
-      <a href="resume.html" class="btn btn-outline">View Resume</a>
-    </div>
-  </div>
-</section>
+    <p>Dubai, UAE • 6+ Years Software QA • 8+ Years System Administration</p>
+    <p>Manual Testing • API Testing • UAT • Agile • Web & Android Development</p>
 
-<section class="testimonials fade-in">
-  <h2>What Clients Say</h2>
+    <a href="contact.html" class="btn btn-primary">Hire Me</a>
+    <a href="resume.html" class="btn btn-outline">View Resume</a>
 
-  <div class="testimonial active">
-    <p>“Very professional and reliable QA engineer. Great communication.”</p>
-    <h4>— Product Manager</h4>
-  </div>
+    <h2>What Clients Say</h2>
+    <p>“Very professional and reliable QA engineer.”</p>
+    <p>“Delivered exactly what we needed on time.”</p>
+  </section>
+</main>
 
-  <div class="testimonial">
-    <p>“Delivered a high-quality website exactly as requested.”</p>
-    <h4>— Startup Founder</h4>
-  </div>
+<footer>
+  © 2026 Priyatham Rama Sai | Dubai, UAE
+</footer>
 
-  <div class="testimonial">
-    <p>“Strong testing skills and attention to detail.”</p>
-    <h4>— Freelance Client</h4>
-  </div>
-
-  <div class="dots">
-    <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-</section>
-
-<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
-
-<a href="https://wa.me/971501934353" class="whatsapp-float" target="_blank">
+<!-- FLOATING BUTTONS -->
+<a class="float-btn whatsapp" href="https://wa.me/971501934353" target="_blank">
   <img src="whatsapp.png">
 </a>
 
-<script>
-let lastScroll = 0;
-const header = document.querySelector("header");
-header.classList.add("header-visible");
-
-window.addEventListener("scroll", () => {
-  const current = window.scrollY;
-  if (current > lastScroll && current > 120) {
-    header.classList.add("header-hidden");
-  } else {
-    header.classList.remove("header-hidden");
-  }
-  lastScroll = current;
-});
-
-/* Fade-in */
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
-});
-document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
-
-/* Testimonials */
-let idx = 0;
-const testimonials = document.querySelectorAll(".testimonial");
-const dots = document.querySelectorAll(".dot");
-
-setInterval(() => {
-  testimonials[idx].classList.remove("active");
-  dots[idx].classList.remove("active");
-  idx = (idx + 1) % testimonials.length;
-  testimonials[idx].classList.add("active");
-  dots[idx].classList.add("active");
-}, 5000);
-</script>
-
-<div class="social-float">
-  <a href="https://instagram.com/YOUR_ID" target="_blank">
-    <img src="images/instagram.png">
-  </a>
-</div>
-
+<a class="float-btn instagram" href="https://www.instagram.com/" target="_blank">
+  <img src="instagram.png">
+</a>
 
 </body>
 </html>

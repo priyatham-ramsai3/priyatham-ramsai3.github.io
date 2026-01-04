@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contact</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
+  <title>Contact | Priyatham Rama Sai</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="navbar">
     <div class="logo">Priyatham</div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="qa-career.html">QA Career</a></li>
-      <li><a href="services.html">Freelance Services</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a class="active" href="contact.html">Contact</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="qa-career.html">QA Career</a></li>
+        <li><a href="services.html">Freelance Services</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-<div class="container">
-  <h1>Contact Me</h1>
+<main>
+  <section>
+    <h1>Contact Me</h1>
 
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-    <button class="btn btn-primary" type="submit">Send Message</button>
-  </form>
+    <form action="https://formspree.io/f/mzdzkkjk" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
 
-  <br>
-  <a href="https://wa.me/971501934353" class="btn btn-outline">Chat on WhatsApp</a>
-</div>
+<footer>
+  © 2026 Priyatham Rama Sai | Dubai, UAE
+</footer>
 
-<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
+<!-- FLOATING BUTTONS -->
+<a class="float-btn whatsapp" href="https://wa.me/971501934353" target="_blank">
+  <img src="whatsapp.png">
+</a>
 
-<div class="whatsapp-float">
-  <a href="https://wa.me/971501934353" target="_blank">
-    <img src="images/whatsapp.png">
-  </a>
-</div>
+<a class="float-btn instagram" href="https://www.instagram.com/" target="_blank">
+  <img src="instagram.png">
+</a>
 
 </body>
 </html>

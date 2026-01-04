@@ -1,65 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QA Career | Priyatham Rama Sai</title>
-<link rel="stylesheet" href="style.css">
+  <title>QA Career | Priyatham Rama Sai</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
 
 <header>
   <div class="navbar">
     <div class="logo">Priyatham</div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="qa-career.html" class="active">QA Career</a>
-      <a href="services.html">Freelance Services</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="qa-career.html">QA Career</a></li>
+        <li><a href="services.html">Freelance Services</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </div>
 </header>
 
-<section class="container fade-in">
-  <h2>Quality Assurance Experience</h2>
+<main>
+  <section>
+    <h1>Quality Assurance Experience</h1>
 
-  <h3>Senior QA Engineer</h3>
-  <p>
-    Responsible for end-to-end QA activities including test planning, execution,
-    defect tracking, and UAT coordination across enterprise applications.
-  </p>
+    <ul>
+      <li>Manual, Regression & Smoke Testing</li>
+      <li>API Testing using Postman</li>
+      <li>User Acceptance Testing (UAT)</li>
+      <li>Agile & Scrum collaboration</li>
+      <li>Defect tracking and reporting</li>
+      <li>Windows & Linux Administration</li>
+      <li>Production support & Infrastructure</li>
+    </ul>
+  </section>
+</main>
 
-  <ul>
-    <li>Manual, Regression & Smoke Testing</li>
-    <li>API Testing using Postman</li>
-    <li>User Acceptance Testing (UAT)</li>
-    <li>Agile & Scrum collaboration</li>
-    <li>Defect tracking and reporting</li>
-  </ul>
-
-  <h3>System Administration Background</h3>
-  <ul>
-    <li>Windows & Linux Administration</li>
-    <li>Active Directory, DNS, DHCP</li>
-    <li>Infrastructure & L1/L2 Support</li>
-    <li>Production environment support</li>
-  </ul>
-</section>
-
-<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
-
-<a href="https://wa.me/971501934353" class="whatsapp-float" target="_blank">
-  <img src="whatsapp.png" alt="WhatsApp">
-</a>
-
-<script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
-});
-document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
-</script>
+<footer>
+  © 2026 Priyatham Rama Sai | Dubai, UAE
+</footer>
 
 </body>
 </html>

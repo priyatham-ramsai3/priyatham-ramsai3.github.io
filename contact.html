@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | Priyatham Rama Sai</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Contact | Priyatham Rama Sai</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="navbar">
+  <div class="nav">
     <div class="logo">Priyatham</div>
-    <nav class="nav-links">
+    <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="qa-career.html">QA Career</a>
@@ -22,12 +21,14 @@
   </div>
 </header>
 
-<section class="container fade-in">
-  <h2>Contact Me</h2>
+<main class="container">
+  <h1>Contact Me</h1>
 
-  <form class="contact-form"
-        action="https://formspree.io/f/mzdzkkjk"
-        method="POST">
+  <form action="https://formspree.io/f/mzdzkkjk"
+        method="POST"
+        class="contact-form">
+
+    <input type="hidden" name="_subject" value="New Portfolio Contact">
 
     <label>Name</label>
     <input type="text" name="name" required>
@@ -41,27 +42,22 @@
     <button type="submit" class="btn btn-hire">Send Message</button>
   </form>
 
-  <p style="margin-top:20px;">
-    Or contact me directly on WhatsApp.
-  </p>
+  <p class="whatsapp-text">Or contact me directly on WhatsApp</p>
 
-  <a href="https://wa.me/971501934353" class="btn btn-outline">
-    Chat on WhatsApp
+  <a href="https://wa.me/971501934353"
+     class="btn btn-whatsapp"
+     target="_blank">
+     Chat on WhatsApp
   </a>
-</section>
+</main>
 
-<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
+<footer>
+  © 2026 Priyatham Rama Sai | Dubai, UAE
+</footer>
 
 <a href="https://wa.me/971501934353" class="whatsapp-float" target="_blank">
   <img src="whatsapp.png" alt="WhatsApp">
 </a>
-
-<script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
-});
-document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
-</script>
 
 </body>
 </html>

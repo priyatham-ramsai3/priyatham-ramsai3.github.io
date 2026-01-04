@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resume | Priyatham Rama Sai</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Resume | Priyatham Rama Sai</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="navbar">
+  <div class="nav">
     <div class="logo">Priyatham</div>
-    <nav class="nav-links">
+    <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="qa-career.html">QA Career</a>
@@ -22,27 +21,24 @@
   </div>
 </header>
 
-<section class="container fade-in">
-  <h2>Resume</h2>
-  <p>Download my latest resume below.</p>
+<main class="container resume-section">
+  <h1>Resume</h1>
+  <p>You can download my latest resume below.</p>
 
-  <a href="Priyatham_Rama_Sai_Resume.pdf" download class="btn btn-hire">
-    Download Resume (PDF)
+  <a href="Priyatham_Rama_Sai_Resume.pdf"
+     class="btn btn-hire"
+     target="_blank">
+     Download Resume (PDF)
   </a>
-</section>
+</main>
 
-<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
+<footer>
+  © 2026 Priyatham Rama Sai | Dubai, UAE
+</footer>
 
 <a href="https://wa.me/971501934353" class="whatsapp-float" target="_blank">
   <img src="whatsapp.png" alt="WhatsApp">
 </a>
-
-<script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
-});
-document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
-</script>
 
 </body>
 </html>

@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Freelance Services | Priyatham Rama Sai</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Freelance Services | Priyatham Rama Sai</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="navbar">
+  <div class="nav">
     <div class="logo">Priyatham</div>
-    <nav class="nav-links">
+    <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="qa-career.html">QA Career</a>
@@ -22,45 +21,42 @@
   </div>
 </header>
 
-<section class="container fade-in">
-  <h2>Freelance Services</h2>
+<main class="container">
+  <h1>Freelance Services</h1>
 
-  <h3>Website Development</h3>
+  <h2>Website Development</h2>
   <ul>
-    <li><strong>Basic – AED 500</strong> (1–3 pages)</li>
-    <li><strong>Business – AED 1,000</strong> (5–7 pages)</li>
-    <li><strong>Advanced – AED 1,500+</strong> (Custom features)</li>
+    <li><strong>Basic</strong> – AED 500 (1–3 pages)</li>
+    <li><strong>Business</strong> – AED 1,000 (5–7 pages)</li>
+    <li><strong>Advanced</strong> – AED 1,500+ (Custom features)</li>
   </ul>
 
-  <h3>Android App Development</h3>
+  <h2>Android App Development</h2>
   <ul>
-    <li><strong>Basic App – AED 1,200</strong></li>
-    <li><strong>Business App – AED 2,000</strong></li>
-    <li><strong>Custom App – Price on Request</strong></li>
+    <li><strong>Basic App</strong> – AED 1,200</li>
+    <li><strong>Business App</strong> – AED 2,000</li>
+    <li><strong>Custom App</strong> – Price on Request</li>
   </ul>
 
-  <h3>QA & Testing Services</h3>
+  <h2>QA & Testing Services</h2>
   <ul>
     <li>Manual & Regression Testing</li>
     <li>API Testing</li>
     <li>UAT Support</li>
   </ul>
 
-  <a href="contact.html" class="btn btn-hire">Hire Me</a>
-</section>
+  <div class="cta-section">
+    <a href="contact.html" class="btn btn-hire">Hire Me</a>
+  </div>
+</main>
 
-<footer>© 2026 Priyatham Rama Sai | Dubai, UAE</footer>
+<footer>
+  © 2026 Priyatham Rama Sai | Dubai, UAE
+</footer>
 
 <a href="https://wa.me/971501934353" class="whatsapp-float" target="_blank">
   <img src="whatsapp.png" alt="WhatsApp">
 </a>
-
-<script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
-});
-document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
-</script>
 
 </body>
 </html>

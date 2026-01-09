@@ -22,18 +22,76 @@
   </div>
 </header>
 
-<main>
+<main class="container">
+
   <section>
     <h1>Contact Me</h1>
+    <p>
+      Looking to hire me or discuss a freelance project?
+      Fill out the form below and I’ll get back to you within 24 hours.
+    </p>
+  </section>
 
-    <form action="https://formspree.io/f/mzdzkkjk" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button class="btn btn-primary" type="submit">Send Message</button>
+  <section>
+    <h2>Contact Details</h2>
+    <ul>
+      <li><strong>Name:</strong> Priyatham Rama Sai</li>
+      <li><strong>Location:</strong> Dubai, UAE</li>
+      <li><strong>Email:</strong> priyatham.ramsai3@gmail.com</li>
+      <li><strong>Availability:</strong> Full-Time & Freelance</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Send a Message</h2>
+
+    <form
+      action="https://formspree.io/f/mzdzkkjk"
+      method="POST"
+      class="contact-form"
+    >
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      >
+
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        rows="5"
+        required
+      ></textarea>
+
+      <!-- OPTIONAL: spam protection -->
+      <input type="hidden" name="_subject" value="New Contact from Portfolio Website">
+
+      <button type="submit" class="btn-primary">
+        Send Message
+      </button>
+
     </form>
   </section>
+
+  <section class="cta-box">
+    <h2>Let’s Work Together</h2>
+    <p>
+      QA support, automation testing, websites, or Android apps —
+      I’m ready to help you build quality software.
+    </p>
+  </section>
+
 </main>
+
 
 <footer>
   © 2026 Priyatham Rama Sai | Dubai, UAE

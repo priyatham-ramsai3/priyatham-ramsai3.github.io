@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Contact | Priyatham Rama Sai</title>
+
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header>
   <div class="navbar">
     <div class="logo">Priyatham Rama Sai</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <nav>
-      <ul>
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="qa-career.html">Career</a></li>
@@ -24,6 +32,7 @@
 
 <main class="container">
 
+  <!-- PAGE INTRO -->
   <section>
     <h1>Contact Me</h1>
     <p>
@@ -32,8 +41,9 @@
     </p>
   </section>
 
+  <!-- CONTACT DETAILS -->
   <section>
-    <h2>Contact Details</h2>
+    <h2><i class="fa-solid fa-address-card"></i> Contact Details</h2>
     <ul>
       <li><strong>Name:</strong> Priyatham Rama Sai</li>
       <li><strong>Location:</strong> Dubai, UAE</li>
@@ -42,13 +52,24 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Send a Message</h2>
+  <!-- SUCCESS MESSAGE -->
+  <section id="success-message" style="display:none;">
+    <h2>✅ Thank You!</h2>
+    <p>
+      Your message has been sent successfully.
+      I’ll get back to you within 24 hours.
+    </p>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact-form-section">
+    <h2><i class="fa-solid fa-envelope"></i> Send a Message</h2>
 
     <form
       action="https://formspree.io/f/mzdzkkjk"
       method="POST"
       class="contact-form"
+      onsubmit="handleSubmit()"
     >
 
       <input
@@ -72,26 +93,29 @@
         required
       ></textarea>
 
-      <!-- OPTIONAL: spam protection -->
-      <input type="hidden" name="_subject" value="New Contact from Portfolio Website">
+      <!-- Formspree config -->
+      <input type="hidden" name="_subject"
+             value="New Contact from Portfolio Website">
+      <input type="hidden" name="_redirect"
+             value="contact.html?success=true">
 
-      <button type="submit" class="btn-primary">
-        Send Message
+      <button type="submit" id="submitBtn" class="btn btn-primary">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
       </button>
 
     </form>
   </section>
 
+  <!-- CTA -->
   <section class="cta-box">
     <h2>Let’s Work Together</h2>
     <p>
-      QA support, automation testing, websites, or Android apps —
+      QA support, websites, or Android apps —
       I’m ready to help you build quality software.
     </p>
   </section>
 
 </main>
-
 
 <footer>
   © 2026 Priyatham Rama Sai | Dubai, UAE
@@ -99,17 +123,33 @@
 
 <!-- FLOATING BUTTONS -->
 <a class="float-btn whatsapp" href="https://wa.me/971501934353" target="_blank">
-  <img src="whatsapp.png">
+  <img src="whatsapp.png" alt="WhatsApp">
 </a>
 
 <a class="float-btn instagram" href="https://www.instagram.com/priyathamrs/" target="_blank">
-  <img src="instagram.png">
+  <img src="instagram.png" alt="Instagram">
 </a>
 
 <a class="float-btn linkedin"
-   href="https://www.linkedin.com/in/priyatham-rama-sai" target="_blank">
-  <img src="linkedin.png">
+   href="https://www.linkedin.com/in/priyatham-rama-sai"
+   target="_blank">
+  <img src="linkedin.png" alt="LinkedIn">
 </a>
+
+<!-- SUCCESS HANDLER + DISABLE BUTTON -->
+<script>
+  function handleSubmit() {
+    const btn = document.getElementById("submitBtn");
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+  }
+
+  // Show success message after redirect
+  if (window.location.search.includes("success=true")) {
+    document.getElementById("success-message").style.display = "block";
+    document.getElementById("contact-form-section").style.display = "none";
+  }
+</script>
 
 </body>
 </html>

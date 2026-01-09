@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Resume | Priyatham Rama Sai</title>
+
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header>
   <div class="navbar">
     <div class="logo">Priyatham Rama Sai</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <nav>
-      <ul>
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="qa-career.html">Career</a></li>
@@ -31,14 +39,14 @@
       You can download my latest resume or review a quick professional summary below.
     </p>
 
-    <a href="Priyatham_Rama_Sai_Resume.pdf" class="btn-primary" download>
-      Download Resume (PDF)
+    <a href="Priyatham_Rama_Sai_Resume.pdf" class="btn btn-primary" download>
+      <i class="fa-solid fa-download"></i> Download Resume (PDF)
     </a>
   </section>
 
   <!-- PROFESSIONAL SUMMARY -->
   <section>
-    <h2>Professional Summary</h2>
+    <h2><i class="fa-solid fa-user-tie"></i> Professional Summary</h2>
     <p>
       Senior Quality Assurance Engineer with 6+ years of experience in software testing,
       UAT, API testing, and Agile methodologies. Strong background in system administration
@@ -52,7 +60,7 @@
 
   <!-- CORE SKILLS -->
   <section>
-    <h2>Core Skills</h2>
+    <h2><i class="fa-solid fa-list-check"></i> Core Skills</h2>
     <ul>
       <li>Manual, Regression & Smoke Testing</li>
       <li>API Testing (Postman)</li>
@@ -67,7 +75,7 @@
 
   <!-- EXPERIENCE -->
   <section>
-    <h2>Professional Experience</h2>
+    <h2><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
 
     <h3>Senior QA Engineer</h3>
     <p><strong>Dubai, UAE</strong></p>
@@ -88,7 +96,7 @@
 
   <!-- FREELANCE EXPERIENCE -->
   <section>
-    <h2>Freelance Experience</h2>
+    <h2><i class="fa-solid fa-laptop-code"></i> Freelance Experience</h2>
     <ul>
       <li>Developed personal, business & portfolio websites</li>
       <li>Built Android applications for startups & individuals</li>
@@ -104,11 +112,13 @@
       I am open to full-time roles and freelance projects.
       Let’s connect and discuss your requirements.
     </p>
-    <a href="contact.html" class="btn-primary">Contact Me</a>
+
+    <a href="contact.html" class="btn btn-primary">
+      <i class="fa-solid fa-paper-plane"></i> Contact Me
+    </a>
   </section>
 
 </main>
-
 
 <footer>
   © 2026 Priyatham Rama Sai | Dubai, UAE
@@ -116,16 +126,16 @@
 
 <!-- FLOATING BUTTONS -->
 <a class="float-btn whatsapp" href="https://wa.me/971501934353" target="_blank">
-  <img src="whatsapp.png">
+  <img src="whatsapp.png" alt="WhatsApp">
 </a>
 
 <a class="float-btn instagram" href="https://www.instagram.com/priyathamrs/" target="_blank">
-  <img src="instagram.png">
+  <img src="instagram.png" alt="Instagram">
 </a>
 
 <a class="float-btn linkedin"
    href="https://www.linkedin.com/in/priyatham-rama-sai" target="_blank">
-  <img src="linkedin.png">
+  <img src="linkedin.png" alt="LinkedIn">
 </a>
 
 </body>

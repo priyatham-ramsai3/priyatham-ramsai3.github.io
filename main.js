@@ -1,20 +1,30 @@
-/* ===== MOBILE MENU ===== */
+/* ==========================
+   MOBILE MENU TOGGLE
+========================== */
 function toggleMenu() {
   document.getElementById("menu").classList.toggle("show");
 }
 
-/* ===== VISITOR COUNTER (GitHub Pages SAFE) ===== */
+/* ==========================
+   VISITOR COUNTER (CountAPI)
+========================== */
 document.addEventListener("DOMContentLoaded", () => {
-  const counter = document.getElementById("visitorCount");
+  const counterEl = document.getElementById("visitorCount");
 
-  if (!counter) return;
+  // Safety check
+  if (!counterEl) return;
 
-  fetch("https://api.countapi.xyz/hit/priyatham-rama-sai.github.io/visits")
+  // UNIQUE namespace + key (VERY IMPORTANT)
+  const NAMESPACE = "priyatham-ramsai-portfolio";
+  const KEY = "home-page-visits";
+
+  fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`)
     .then(res => res.json())
     .then(data => {
-      counter.textContent = data.value;
+      counterEl.textContent = data.value;
     })
-    .catch(() => {
-      counter.textContent = "—";
+    .catch(err => {
+      console.error("Visitor counter error:", err);
+      counterEl.textContent = "N/A";
     });
 });

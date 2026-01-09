@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Priyatham Rama Sai | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
 
-  <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -15,7 +15,9 @@
 
 <header>
   <div class="navbar">
-    <div class="logo">Priyatham Rama Sai</div>
+    <a href="index.html" class="logo">
+  <span>Priyatham Rama Sai</span>
+</a>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <nav>
       <ul id="menu">
@@ -31,117 +33,86 @@
   </div>
 </header>
 
-<main class="container">
+<main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Priyatham Rama Sai</h1>
-    <h2>Senior QA Engineer & Freelance Developer</h2>
+<section class="hero">
+  <h1>Priyatham Rama Sai</h1>
+  <h2>Senior QA Engineer & Freelance Developer</h2>
 
-    <p class="location">
-      Dubai, UAE • 6+ Years Software QA • 8+ Years System Administration
-    </p>
+  <p class="subtitle">
+    Dubai, UAE • 6+ Years QA • 8+ Years System Administration
+  </p>
 
-    <p class="skills">
-      Manual Testing • API Testing • UAT • Agile • Web & Android Development
-    </p>
+  <p>
+    Manual Testing • API Testing • UAT • Agile • Web & Android Development
+  </p>
 
-    <div class="hero-buttons">
-      <a href="contact.html" class="btn btn-primary">
-        <i class="fa-solid fa-briefcase"></i> Hire Me
-      </a>
-
-      <a href="resume.html" class="btn btn-outline">
-        <i class="fa-solid fa-file-lines"></i> View Resume
-      </a>
-
-      <a href="https://www.linkedin.com/in/priyatham-rama-sai"
-         target="_blank"
-         class="btn btn-linkedin">
-        <i class="fa-brands fa-linkedin"></i> LinkedIn
-      </a>
-    </div>
-  </section>
-
-  <!-- PROFESSIONAL SUMMARY -->
-  <section>
-    <h2>Professional Summary</h2>
-    <p>
-      I am a Senior Quality Assurance Engineer with strong expertise in manual testing,
-      API testing, UAT, and production support. Alongside my QA career, I work as a
-      freelance Website and Android App Developer, helping startups and individuals
-      build reliable digital products.
-    </p>
-  </section>
-
-  <!-- SERVICES -->
-  <section>
-    <h2>What I Do</h2>
-    <ul>
-      <li><strong>Software Testing & QA</strong> – Manual, API, UAT & Release Validation</li>
-      <li><strong>Website Development</strong> – Personal, business & portfolio websites</li>
-      <li><strong>Android App Development</strong> – Clean, scalable mobile applications</li>
-      <li><strong>Production Support</strong> – Stability, monitoring & issue resolution</li>
-    </ul>
-
-    <a href="services.html" class="btn btn-secondary">
-      <i class="fa-solid fa-arrow-right"></i> View Freelance Services
-    </a>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section>
-    <h2>Experience Highlights</h2>
-    <ul>
-      <li>6+ years of professional QA experience in Agile environments</li>
-      <li>Handled end-to-end testing lifecycle for multiple releases</li>
-      <li>Worked closely with developers, product owners & stakeholders</li>
-      <li>Strong background in system administration & infrastructure support</li>
-    </ul>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section>
-    <h2>What Clients Say</h2>
-    <blockquote>
-      “Very professional and reliable QA engineer. Great communication.”
-    </blockquote>
-    <blockquote>
-      “Delivered exactly what we needed on time.”
-    </blockquote>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-box">
-    <h2>Looking for a Reliable QA Engineer or Developer?</h2>
-    <p>
-      I am open to full-time opportunities and freelance projects.
-      Let’s discuss how I can help.
-    </p>
+  <div class="hero-buttons">
     <a href="contact.html" class="btn btn-primary">
-      <i class="fa-solid fa-paper-plane"></i> Contact Me
+      <i class="fa-solid fa-briefcase"></i> Hire Me
     </a>
-  </section>
+
+    <a href="resume.html" class="btn btn-outline">
+      <i class="fa-solid fa-file-lines"></i> View Resume
+    </a>
+
+    <a href="https://www.linkedin.com/in/priyatham-rama-sai"
+       target="_blank"
+       class="btn btn-linkedin">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2>Professional Summary</h2>
+  <p>
+    Senior QA Engineer with strong experience in manual testing, API testing,
+    UAT, and production support. Also working as a freelance web and Android
+    developer delivering reliable digital products.
+  </p>
+</section>
+
+<section>
+  <h2>What I Do</h2>
+  <ul>
+    <li>Software Testing & QA</li>
+    <li>Website Development</li>
+    <li>Android App Development</li>
+    <li>Production Support</li>
+  </ul>
+
+  <a href="services.html" class="btn btn-secondary">
+    View Freelance Services
+  </a>
+</section>
+
+<section class="cta-box">
+  <h2>Let’s Work Together</h2>
+  <p>Open to full-time & freelance opportunities.</p>
+  <a href="contact.html" class="btn btn-primary">
+    Contact Me
+  </a>
+</section>
 
 </main>
 
 <footer>
   © 2026 Priyatham Rama Sai | Dubai, UAE
+  <div class="visitor-counter">
+  👁️ Visitors:
+  <span id="visitorCount">0</span>
+</div>
 </footer>
 
-<!-- FLOATING BUTTONS -->
 <a class="float-btn whatsapp" href="https://wa.me/971501934353" target="_blank">
-  <img src="whatsapp.png" alt="WhatsApp">
+  <img src="whatsapp.png">
 </a>
-
 <a class="float-btn instagram" href="https://www.instagram.com/priyathamrs/" target="_blank">
-  <img src="instagram.png" alt="Instagram">
+  <img src="instagram.png">
 </a>
-
-<a class="float-btn linkedin"
-   href="https://www.linkedin.com/in/priyatham-rama-sai"
-   target="_blank">
-  <img src="linkedin.png" alt="LinkedIn">
+<a class="float-btn linkedin" href="https://www.linkedin.com/in/priyatham-rama-sai" target="_blank">
+  <img src="linkedin.png">
 </a>
 
 </body>

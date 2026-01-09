@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Priyatham Rama Sai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
@@ -15,7 +16,9 @@
 
 <header>
   <div class="navbar">
-    <div class="logo">Priyatham Rama Sai</div>
+  <a href="index.html" class="logo">
+  <span>Priyatham Rama Sai</span>
+</a>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <nav>
       <ul id="menu">
@@ -62,50 +65,46 @@
     </p>
   </section>
 
-  <!-- CONTACT FORM -->
   <section id="contact-form-section">
-    <h2><i class="fa-solid fa-envelope"></i> Send a Message</h2>
+  <h2><i class="fa-solid fa-envelope"></i> Send a Message</h2>
 
-    <form
-      action="https://formspree.io/f/mzdzkkjk"
-      method="POST"
-      class="contact-form"
-      onsubmit="handleSubmit()"
+  <form
+    action="https://formspree.io/f/mzdzkkjk"
+    method="POST"
+    class="contact-form"
+    onsubmit="handleSubmit()"
+  >
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
     >
 
-      <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-      >
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+    >
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required
-      >
+    <textarea
+      name="message"
+      placeholder="Your Message"
+      required
+    ></textarea>
 
-      <textarea
-        name="message"
-        placeholder="Your Message"
-        rows="5"
-        required
-      ></textarea>
+    <!-- Formspree config -->
+    <input type="hidden" name="_subject" value="New Contact from Portfolio Website">
+    <input type="hidden" name="_redirect" value="contact.html?success=true">
 
-      <!-- Formspree config -->
-      <input type="hidden" name="_subject"
-             value="New Contact from Portfolio Website">
-      <input type="hidden" name="_redirect"
-             value="contact.html?success=true">
+    <button type="submit" id="submitBtn" class="btn btn-primary">
+      <i class="fa-solid fa-paper-plane"></i> Send Message
+    </button>
 
-      <button type="submit" id="submitBtn" class="btn btn-primary">
-        <i class="fa-solid fa-paper-plane"></i> Send Message
-      </button>
-
-    </form>
-  </section>
+  </form>
+</section>
 
   <!-- CTA -->
   <section class="cta-box">

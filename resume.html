@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Resume | Priyatham Rama Sai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
@@ -15,7 +16,9 @@
 
 <header>
   <div class="navbar">
-    <div class="logo">Priyatham Rama Sai</div>
+    <a href="index.html" class="logo">
+  <span>Priyatham Rama Sai</span>
+</a>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <nav>
       <ul id="menu">
@@ -33,19 +36,46 @@
 
 <main class="container">
 
-  <!-- PAGE TITLE -->
+  <!-- PAGE INTRO -->
   <section>
     <h1>Resume</h1>
     <p>
-      You can download my latest resume or review a quick professional summary below.
+      View my resume directly below or download a copy for offline reference.
     </p>
 
-    <a href="Priyatham_Rama_Sai_Resume.pdf" class="btn btn-primary" download>
+    <a href="Priyatham_Rama_Sai_Resume.pdf"
+       class="btn btn-primary"
+       download>
       <i class="fa-solid fa-download"></i> Download Resume (PDF)
     </a>
   </section>
 
-  <!-- PROFESSIONAL SUMMARY -->
+  <!-- RESUME VIEWER -->
+  <section>
+    <h2><i class="fa-solid fa-file-pdf"></i> Resume Viewer</h2>
+
+    <div style="
+      width: 100%;
+      height: 900px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    ">
+      <iframe
+        src="Priyatham_Rama_Sai_Resume.pdf"
+        width="100%"
+        height="100%"
+        style="border: none;"
+        title="Priyatham Rama Sai Resume">
+      </iframe>
+    </div>
+
+    <p style="margin-top: 10px; font-size: 14px; color: #555;">
+      If the resume does not load, please use the download button above.
+    </p>
+  </section>
+
+  <!-- QUICK SUMMARY -->
   <section>
     <h2><i class="fa-solid fa-user-tie"></i> Professional Summary</h2>
     <p>
@@ -57,53 +87,6 @@
       Also working as a freelance Website and Android App Developer, delivering clean,
       scalable, and performance-optimized solutions.
     </p>
-  </section>
-
-  <!-- CORE SKILLS -->
-  <section>
-    <h2><i class="fa-solid fa-list-check"></i> Core Skills</h2>
-    <ul>
-      <li>Manual, Regression & Smoke Testing</li>
-      <li>API Testing (Postman)</li>
-      <li>User Acceptance Testing (UAT)</li>
-      <li>Agile & Scrum Collaboration</li>
-      <li>Defect Tracking & Reporting</li>
-      <li>Web & Android Development</li>
-      <li>Windows & Linux Administration</li>
-      <li>Production Support & Monitoring</li>
-    </ul>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section>
-    <h2><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
-
-    <h3>Senior QA Engineer</h3>
-    <p><strong>Dubai, UAE</strong></p>
-    <ul>
-      <li>Handled end-to-end testing lifecycle for multiple releases</li>
-      <li>Performed manual, API, regression, and UAT testing</li>
-      <li>Collaborated closely with developers and product owners</li>
-      <li>Ensured defect-free production deployments</li>
-    </ul>
-
-    <h3>System Administrator</h3>
-    <ul>
-      <li>Managed Windows & Linux systems</li>
-      <li>Provided production and infrastructure support</li>
-      <li>Handled system monitoring, troubleshooting & backups</li>
-    </ul>
-  </section>
-
-  <!-- FREELANCE EXPERIENCE -->
-  <section>
-    <h2><i class="fa-solid fa-laptop-code"></i> Freelance Experience</h2>
-    <ul>
-      <li>Developed personal, business & portfolio websites</li>
-      <li>Built Android applications for startups & individuals</li>
-      <li>Provided QA support for early-stage products</li>
-      <li>Delivered projects on time with clear client communication</li>
-    </ul>
   </section>
 
   <!-- CTA -->
@@ -135,7 +118,8 @@
 </a>
 
 <a class="float-btn linkedin"
-   href="https://www.linkedin.com/in/priyatham-rama-sai" target="_blank">
+   href="https://www.linkedin.com/in/priyatham-rama-sai"
+   target="_blank">
   <img src="linkedin.png" alt="LinkedIn">
 </a>
 

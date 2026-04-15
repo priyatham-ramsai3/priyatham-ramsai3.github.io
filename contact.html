@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Priyatham Rama Sai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KRKSGMKYB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9KRKSGMKYB');
+  
+</script>
+<body>
+
+<header>
+  <div class="navbar">
+  <a href="index.html" class="logo">
+  <span>Priyatham Rama Sai</span>
+</a>
+    <button type="button" class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false" id="menuToggle">☰</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="qa-career.html">Career</a></li>
+        <li><a href="services.html">Freelance Services</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="deepaadvika-studios.html">DeepAadvika Studios</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+
+  <!-- PAGE INTRO -->
+  <section>
+    <h1>Contact Me</h1>
+    <p class="subtitle">
+      Looking to hire me or discuss a freelance project?
+      Fill out the form below and I’ll get back to you within 24 hours.
+    </p>
+  </section>
+
+  <!-- CONTACT DETAILS -->
+  <section>
+    <h2><i class="fa-solid fa-address-card"></i> Contact Details</h2>
+    <ul class="contact-grid">
+      <li><strong>Name</strong> Priyatham Rama Sai</li>
+      <li><strong>Location</strong> Dubai, UAE</li>
+      <li><strong>Phone</strong> <a href="tel:+971501934353">+971 50 193 4353</a></li>
+      <li><strong>Email</strong> <a href="mailto:priyatham.ramsai3@gmail.com">priyatham.ramsai3@gmail.com</a></li>
+      <li><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/priyathamrama-sai" target="_blank" rel="noopener noreferrer">linkedin.com/in/priyathamrama-sai</a></li>
+      <li><strong>Portfolio</strong> <a href="https://priyatham-ramsai3.github.io/">priyatham-ramsai3.github.io</a></li>
+      <li><strong>Availability</strong> Full-Time &amp; Freelance</li>
+    </ul>
+  </section>
+
+  <!-- SUCCESS MESSAGE -->
+  <section id="success-message" style="display:none;">
+    <h2>✅ Thank You!</h2>
+    <p>
+      Your message has been sent successfully.
+      I’ll get back to you within 24 hours.
+    </p>
+  </section>
+
+  <section id="contact-form-section">
+  <h2><i class="fa-solid fa-envelope"></i> Send a Message</h2>
+
+  <form
+    action="https://formspree.io/f/mzdzkkjk"
+    method="POST"
+    class="contact-form"
+    onsubmit="handleSubmit()"
+  >
+    <div>
+      <label for="contact-name">Your name</label>
+      <input
+        id="contact-name"
+        type="text"
+        name="name"
+        placeholder="Your name"
+        autocomplete="name"
+        required
+      >
+    </div>
+
+    <div>
+      <label for="contact-email">Your email</label>
+      <input
+        id="contact-email"
+        type="email"
+        name="email"
+        placeholder="you@example.com"
+        autocomplete="email"
+        required
+      >
+    </div>
+
+    <div>
+      <label for="contact-message">Message</label>
+      <textarea
+        id="contact-message"
+        name="message"
+        placeholder="Tell me about your project or role…"
+        required
+      ></textarea>
+    </div>
+
+    <!-- Formspree config -->
+    <input type="hidden" name="_subject" value="New Contact from Portfolio Website">
+    <input type="hidden" name="_redirect" value="contact.html?success=true">
+
+    <button type="submit" id="submitBtn" class="btn btn-primary">
+      <i class="fa-solid fa-paper-plane"></i> Send Message
+    </button>
+
+  </form>
+</section>
+
+  <!-- CTA -->
+  <section class="cta-box">
+    <h2>Let’s Work Together</h2>
+    <p>
+      Full stack development, APIs, integrations, or freelance web and Android work —
+      I’m ready to discuss your project.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">© 2026 Priyatham Rama Sai · Dubai, UAE</div>
+</footer>
+
+<a class="float-btn whatsapp" href="https://wa.me/971501934353" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <img src="whatsapp.png" alt="">
+</a>
+
+<a class="float-btn instagram" href="https://www.instagram.com/priyathamrs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+  <img src="instagram.png" alt="">
+</a>
+
+<a class="float-btn linkedin" href="https://www.linkedin.com/in/priyathamrama-sai" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+  <img src="linkedin.png" alt="">
+</a>
+
+<!-- SUCCESS HANDLER + DISABLE BUTTON -->
+<script>
+  function handleSubmit() {
+    const btn = document.getElementById("submitBtn");
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+  }
+
+  // Show success message after redirect
+  if (window.location.search.includes("success=true")) {
+    document.getElementById("success-message").style.display = "block";
+    document.getElementById("contact-form-section").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+
